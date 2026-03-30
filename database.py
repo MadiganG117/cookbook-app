@@ -1,7 +1,6 @@
 import sqlite3
 from pathlib import Path
 
-# Define the path where the database file will be saved
 DB_PATH = Path(__file__).parent / "cookbook.db"
 
 def get_connection():
@@ -31,9 +30,8 @@ def initialize_database():
     conn.commit()
     conn.close()
 
-
-    def add_recipe(title, ingredients, instructions, prep_time, cook_time, servings, notes):
-        """Add a new recipe to the database."""
+def add_recipe(title, ingredients, instructions, prep_time, cook_time, servings, notes):
+    """Add a new recipe to the database."""
     conn = get_connection()
     cursor = conn.cursor()
 
