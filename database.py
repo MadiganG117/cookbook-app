@@ -33,7 +33,7 @@ def initialize_database():
 
 
     def add_recipe(title, ingredients, instructions, prep_time, cook_time, servings, notes):
-    """Add a new recipe to the database."""
+        """Add a new recipe to the database."""
     conn = get_connection()
     cursor = conn.cursor()
 
