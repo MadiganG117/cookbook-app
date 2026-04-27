@@ -23,20 +23,31 @@ A desktop cookbook application built with Python that lets you store, organize, 
 ## Installation & Setup
 
 1. Clone the repository
+```
+git clone https://github.com/MadiganG117/cookbook-app.git
+```
 2. Navigate into the project folder
+```
 cd cookbook-app
+```
 3. Create and activate a virtual environment
+```
 python -m venv venv
 venv\Scripts\activate
+```
 4. Install dependencies
+```
 pip install -r requirements.txt
+```
 5. Run the app
- python main.py
+```
+python main.py
+```
 
- ---
+---
 
 ## Project Structure
-
+```
 cookbook-app/
 ├── main.py              # Entry point, launches the app
 ├── database.py          # All database logic (add, read, update, delete recipes)
@@ -48,6 +59,7 @@ cookbook-app/
 │   └── recipe_detail.py # Right panel, recipe form and detail view
 ├── requirements.txt     # Project dependencies
 └── README.md            # Project documentation
+```
 
 ---
 
