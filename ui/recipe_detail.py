@@ -1,4 +1,5 @@
 import customtkinter as ctk
+from tkinter import messagebox
 from database import add_recipe, update_recipe, delete_recipe
 
 class RecipeDetail(ctk.CTkFrame):
@@ -89,7 +90,7 @@ class RecipeDetail(ctk.CTkFrame):
         notes = self.notes_text.get("1.0", "end").strip()
 
         if not title or not ingredients or not instructions:
-            print("Title, ingredients and instructions are required!")
+            messagebox.showerror("Missing Fields", "Title, ingredients and instructions are required!")
             return
 
         prep_time = int(prep_time) if prep_time.isdigit() else None
